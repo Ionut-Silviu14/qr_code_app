@@ -16,8 +16,14 @@ return new class extends Migration
             $table->string('nume');
             $table->string('prenume');
             $table->string('email')->unique();
+            $table->string('telefon');
+            $table->string('tip'); 
+            $table->string('judet'); 
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            // $table->string('idBilet');
+            // $table->boolean('tipUser');
+            // $table->string('idPoartaAcces');
             $table->rememberToken();
             $table->timestamps();
         });

@@ -5,17 +5,18 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Event extends Model
+class Evenimente extends Model
 {
     use HasFactory;
-    protected $table =[
-        'denumire',
+    
+    protected $fillable = [
+        'nume',
         'data',
         'descriere',
         'locatie',
         'logo',
         'cover',
+        'porti_acces',
         'editie',
-        'poarta_acces'
     ];
 }

@@ -11,15 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('events', function (Blueprint $table) {
+        Schema::create('judete', function (Blueprint $table) {
             $table->id();
-            $table->string('denumire');
-            $table->date('data');
-            $table->date('descrie');
-            $table->string('locatie');
-            $table->string('logo');
-            $table->string('cover');
-            $table->string('editie');
+            $table->string('nume');
             $table->timestamps();
         });
     }
@@ -29,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('events');
+        Schema::dropIfExists('judete');
     }
 };

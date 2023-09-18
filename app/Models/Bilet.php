@@ -5,14 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Ticket extends Model
+class Bilet extends Model
 {
     use HasFactory;
 
-    protected $table =[
+    protected $table ='bilet';
+
+    protected $fillable =[
         'id_user',
-        'id_event',
+        'id_eveniment',
         'data_generare',
-        'lista_id_intrari'
+        'lista_de_intrari'
     ];
 }

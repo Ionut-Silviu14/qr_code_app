@@ -25,9 +25,6 @@ class User extends Authenticatable
         'tip',
         'judet',
         'password',
-        'id_bilete',
-        'user_type',
-        'id_poarta_acces'
     ];
 
     /**
@@ -36,12 +33,8 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $hidden = [
-        'password',
+        'parola',
         'remember_token',
-        'id_poarta_acces',
-        'id_bilete',
-        'user_type'
-        
     ];
 
     /**
